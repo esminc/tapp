@@ -22,7 +22,9 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "lib/tapp.rb"
+     "VERSION",
+     "lib/tapp.rb",
+     "tapp.gemspec"
   ]
   s.homepage = %q{http://github.com/esminc/tapp}
   s.rdoc_options = ["--charset=UTF-8"]
