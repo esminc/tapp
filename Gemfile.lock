@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    tapp (1.0.0)
+      awesome_print
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    awesome_print (0.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  tapp!
