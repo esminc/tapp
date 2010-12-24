@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
@@ -41,5 +42,7 @@ Gem::Specification.new do |s|
     end
   else
   end
+
+  s.add_dependency 'awesome_print'
 end
 
