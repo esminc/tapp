@@ -1,0 +1,11 @@
+= ChangeLog
+
+== 1.1.0
+
+* New Feature
+
+  * Object#taap support awesome_print (Thanks ryopeko!)
+
+== 1.0.0
+
+initial release
