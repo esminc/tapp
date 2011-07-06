@@ -42,7 +42,5 @@ Gem::Specification.new do |s|
     end
   else
   end
-
-  s.add_dependency 'awesome_print'
 end
 
