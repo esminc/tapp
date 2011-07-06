@@ -8,7 +8,7 @@
   ...
   foo bar.tapp     #=> pp bar
   foo bar.taputs   #=> puts bar
-  foo bar.taap   #=> ap bar
+  foo bar.taap     #=> ap bar
 
 examples of use:
 
@@ -32,6 +32,9 @@ examples of use:
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
+
+== Contributors
+see https://github.com/esminc/tapp/pulls
 
 == Copyright
 
