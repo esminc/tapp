@@ -1,3 +1,4 @@
+require 'tapp/version'
 require 'pp'
 
 class Object
