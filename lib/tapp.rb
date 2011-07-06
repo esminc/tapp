@@ -10,7 +10,7 @@ class Object
     tap { puts block_given? ? yield(self) : self }
   end
 
-  def tapap
+  def taap
     tap { ap block_given? ? yield(self) : self }
   end
 end

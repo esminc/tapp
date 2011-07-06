@@ -8,7 +8,7 @@
   ...
   foo bar.tapp     #=> pp bar
   foo bar.taputs   #=> puts bar
-  foo bar.tapap   #=> ap bar
+  foo bar.taap   #=> ap bar
 
 examples of use:
 
