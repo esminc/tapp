@@ -23,6 +23,14 @@ examples of use:
   [1, 2]
   => {:a=>1, :b=>2}
 
+=== Verbose Mode
+
+  >> Tapp::verbose = true
+  >> (1..5).tapp
+  `tapp' in (irb):2:in `irb_binding'
+  1..5
+  => 1..5
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
