@@ -39,7 +39,7 @@ class Object
     Object.module_eval do
       remove_method :taap
 
-      def tapp
+      def taap
         Tapp.report_called
         tap { ap block_given? ? yield(self) : self }
       end
