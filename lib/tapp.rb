@@ -1,5 +1,4 @@
 require 'tapp/version'
-require 'pp'
 
 module Tapp
   class << self
@@ -15,8 +14,18 @@ end
 
 class Object
   def tapp
-    Tapp.report_called
-    tap { pp block_given? ? yield(self) : self }
+    require 'pp'
+
+    Object.module_eval do
+      remove_method :tapp
+
+      def tapp
+        Tapp.report_called
+        tap { pp block_given? ? yield(self) : self }
+      end
+    end
+
+    tapp
   end
 
   def taputs
@@ -25,9 +34,18 @@ class Object
   end
 
   def taap
-    Tapp.report_called
     require 'ap'
-    tap { ap block_given? ? yield(self) : self }
+
+    Object.module_eval do
+      remove_method :taap
+
+      def tapp
+        Tapp.report_called
+        tap { ap block_given? ? yield(self) : self }
+      end
+    end
+
+    taap
   rescue LoadError
     warn "Sorry, you need to install awesome_print: `gem install awesome_print`"
   end
