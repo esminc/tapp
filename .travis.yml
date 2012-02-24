@@ -5,3 +5,4 @@ rvm:
   - jruby-18mode
   - jruby-19mode
   - rbx-18mode
+script: bundle exec rspec
