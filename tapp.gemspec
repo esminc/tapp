@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency 'thor'
+  s.add_development_dependency 'turnip'
 end
