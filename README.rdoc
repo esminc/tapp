@@ -42,7 +42,7 @@ examples of use:
 * Send me a pull request. Bonus points for topic branches.
 
 == Contributors
-see https://github.com/esminc/tapp/pulls
+see https://github.com/esminc/tapp/contributors
 
 == Copyright
 
