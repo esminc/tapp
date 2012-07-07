@@ -1,11 +1,23 @@
-require 'tapp/version'
+require 'tapp/configuration'
+require 'tapp/deprecated'
 
 module Tapp
+  extend Deprecated
+
   class << self
-    attr_accessor :verbose
+    def config
+      @config ||= Tapp::Configuration.new
+    end
+
+    def configure
+      yield config
+
+      config
+    end
 
     def report_called
-      return unless verbose
+      return unless config.report_caller
+
       method_quoted = caller[0].split(':in').last.strip
       puts "#{method_quoted} in #{caller[1]}"
     end
