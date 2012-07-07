@@ -1,4 +1,4 @@
+Dir[File.expand_path('../steps/**/*.rb', __FILE__)].each {|f| require f }
+
 RSpec.configure do |config|
-  Turnip::Config.step_dirs = 'spec/steps'
-  Turnip::StepLoader.load_steps
 end
