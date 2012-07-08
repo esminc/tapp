@@ -3,7 +3,7 @@ require 'pp'
 
 module Tapp::Printer
   class PrettyPrint < Base
-    def print_without_report_called(*args)
+    def print(*args)
       pp *args
     end
   end

@@ -1,4 +1,3 @@
-require 'tapp/util'
 require 'singleton'
 
 module Tapp
@@ -26,15 +25,6 @@ module Tapp
       def print(*args)
         raise NotImplementedError
       end
-
-      def print_with_report_called(*args)
-        Tapp::Util.report_called if Tapp.config.report_caller
-
-        print_without_report_called *args
-      end
-
-      alias print_without_report_called print
-      alias print print_with_report_called
     end
   end
 end
