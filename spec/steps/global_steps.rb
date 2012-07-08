@@ -20,7 +20,7 @@ step 'Ruby it' do
     $stdout = STDOUT
   end
 
-  @output = stdout.string.chop
+  @output = stdout.string.gsub(/\e\[0.*?m/, '').chop
 end
 
 step 'I should see:' do |output|

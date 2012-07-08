@@ -1,5 +1,5 @@
-Feature: Report caller
-  Scenario: call tapp when config.report_caller set to true
+Feature: config.report_caller
+  Scenario: set config.report_caller to true and call tapp
     Given a file named "hello.rb" with:
     """
     Tapp.config.report_caller = true
