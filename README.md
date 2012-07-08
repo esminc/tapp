@@ -11,9 +11,8 @@ $ gem install tapp
 ``` ruby
 require 'tapp'
 
-'foo'.tapp   #=> pp 'foo'
-'foo'.taputs #=> puts 'foo'
-'foo'.taap   #=> ap 'foo'
+'foo'.tapp   #=> `pp 'foo'` and return 'foo'
+'foo'.taputs #=> `puts 'foo'` and return 'foo'
 ```
 
 See more examples in [spec/acceptance](https://github.com/esminc/tapp/tree/master/spec/acceptance) directory.
