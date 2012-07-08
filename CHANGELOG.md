@@ -1,17 +1,29 @@
 # ChangeLog
 
-## 1.3.0
+## 1.4.0 (2012-07-08)
 
-* Add `tapp` command-line tool. (ursm)
+Some API changes for future enhancements.
 
-## 1.2.0
+* Added `Tapp.config` and `Tapp.configure`. See README.md for details.
+* `Tapp.verbose` moved to `Tapp.config.report_caller`.
+* `Object#taap` is deprecated. Set `Tapp.config.default_printer = :awesome_print` and use `#tapp` instead.
 
-* Add `Tapp.verbose` option. (moro)
+## 1.3.1 (2012-03-13)
 
-## 1.1.0
+* `tapp grep` finds "taputs" and "taap". (@kei-s)
 
-* `Object#taap` support awesome\_print (Thanks ryopeko!)
+## 1.3.0 (2011-11-01)
 
-## 1.0.0
+* Add `tapp` command-line tool. (@ursm)
+
+## 1.2.0 (2011-10-27)
+
+* Add `Tapp.verbose` option. (@moro)
+
+## 1.1.0 (2011-07-06)
+
+* `Object#taap` support `awesome_print`. (Thanks @ryopeko!)
+
+## 1.0.0 (2010-07-07)
 
 initial release
