@@ -29,13 +29,13 @@ end
 <table>
   <tr>
     <th>Key</th>
-    <th>Description</th>
     <th>Default</th>
+    <th>Description</th>
   </tr>
   <tr>
-    <td>`report_caller`</td>
-    <td>[report_caller.feature](https://github.com/esminc/tapp/blob/master/spec/acceptance/report_caller.feature)</td>
-    <td>`false`</td>
+    <td><code>report_caller</code></td>
+    <td><code>false</code></td>
+    <td><a href="https://github.com/esminc/tapp/blob/master/spec/acceptance/report_caller.feature">report_caller.feature</a></td>
   </tr>
 </table>
 
