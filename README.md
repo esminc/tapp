@@ -1,4 +1,4 @@
-# tapp ![Build Status](https://secure.travis-ci.org/esminc/tapp.png?branch=master)
+# tapp [![Build Status](https://secure.travis-ci.org/esminc/tapp.png?branch=master)](http://travis-ci.org/#!/esminc/tapp)
 
 ## Install
 
