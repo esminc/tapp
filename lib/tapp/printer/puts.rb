@@ -6,4 +6,6 @@ module Tapp::Printer
       puts *args
     end
   end
+
+  register :puts, Puts
 end

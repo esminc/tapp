@@ -21,8 +21,8 @@ See more examples in [spec/acceptance](https://github.com/esminc/tapp/tree/maste
 
 ``` ruby
 Tapp.configure do |config|
-  config.default_printer = :awesome_print
   config.report_caller   = true
+  config.default_printer = :puts
 end
 ```
 
@@ -33,16 +33,19 @@ end
     <th>Description</th>
   </tr>
   <tr>
-    <td><code>default_printer</code></td>
-    <td><code>:pretty_print</code></td>
-    <td><a href="https://github.com/esminc/tapp/blob/master/spec/acceptance/default_printer.feature">default_printer.feature</a></td>
-  </tr>
-  <tr>
     <td><code>report_caller</code></td>
     <td><code>false</code></td>
     <td><a href="https://github.com/esminc/tapp/blob/master/spec/acceptance/report_caller.feature">report_caller.feature</a></td>
   </tr>
+  <tr>
+    <td><code>default_printer</code></td>
+    <td><code>:pretty_print</code></td>
+    <td><a href="https://github.com/esminc/tapp/blob/master/spec/acceptance/default_printer.feature">default_printer.feature</a></td>
+  </tr>
 </table>
+
+## Custom Printer
+You can define a custom printer. See [custom_printer.feature](https://github.com/esminc/tapp/blob/master/spec/acceptance/custom_printer.feature).
 
 ## Note on Patches/Pull Requests
 
