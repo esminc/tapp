@@ -1,6 +1,7 @@
 require 'tapp/configuration'
 require 'tapp/deprecated'
 require 'tapp/object_extension'
+require 'tapp/printer'
 
 module Tapp
   extend Deprecated

@@ -5,10 +5,13 @@ module Tapp
     module_function
 
     def report_called
-      return unless Tapp.config.report_caller
+      inner, outer = caller.partition {|line|
+        line.include?('/lib/tapp')
+      }
 
-      method_quoted = caller[0].split(':in').last.strip
-      puts "#{method_quoted} in #{caller[1]}"
+      method_quoted = inner.last.split(':in').last.strip
+
+      puts "#{method_quoted} in #{outer.first}"
     end
   end
 end

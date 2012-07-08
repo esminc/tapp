@@ -1,42 +1,21 @@
-require 'tapp/util'
+require 'tapp/printer'
 
 module Tapp
   module ObjectExtension
-    def tapp
-      require 'pp'
-
-      Tapp::ObjectExtension.module_eval do
-        remove_method :tapp
-
-        def tapp
-          Tapp::Util.report_called
-          tap { pp block_given? ? yield(self) : self }
-        end
-      end
-
-      tapp
+    def tapp(printer = Tapp.config.default_printer)
+      tap {
+        Tapp::Printer.instance(printer).print block_given? ? yield(self) : self
+      }
     end
 
     def taputs
-      Tapp::Util.report_called
-      tap { puts block_given? ? yield(self) : self }
+      tapp :puts
     end
 
     def taap
-      require 'ap'
+      warn 'DEPRECATION WARNING: `taap` is deprecated. Set `Tapp.config.default_printer = :awesome_print` and use `tapp` instead.'
 
-      Tapp::ObjectExtension.module_eval do
-        remove_method :taap
-
-        def taap
-          Tapp::Util.report_called
-          tap { ap block_given? ? yield(self) : self }
-        end
-      end
-
-      taap
-    rescue LoadError
-      warn "Sorry, you need to install awesome_print: `gem install awesome_print`"
+      tapp :awesome_print
     end
   end
 end
