@@ -2,14 +2,24 @@ step 'I have the following code:' do |code|
   @code = code
 end
 
+step 'a file named :filename with:' do |filename, code|
+  @filename, @code = filename, code
+end
+
 step 'Ruby it' do
   stdout = StringIO.new
   $stdout = stdout
+
   begin
-    eval @code
+    if @filename
+      eval @code, binding, @filename, 1
+    else
+      eval @code
+    end
   ensure
     $stdout = STDOUT
   end
+
   @output = stdout.string.chop
 end
 

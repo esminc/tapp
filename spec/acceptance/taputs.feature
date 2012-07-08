@@ -5,6 +5,8 @@ Feature: Object#taputs
     """
     require 'tapp'
 
+    Tapp.config.reset
+
     (1..5).taputs.select(&:odd?).taputs.inject(&:+)
     """
 
