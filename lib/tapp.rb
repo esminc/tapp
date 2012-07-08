@@ -11,10 +11,8 @@ module Tapp
       @config ||= Tapp::Configuration.new
     end
 
-    def configure
-      yield config
-
-      config
+    def configure(&block)
+      config.tap(&block)
     end
   end
 end
