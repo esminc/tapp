@@ -1,12 +1,7 @@
 Feature: Object#taputs
-
   Scenario: Call taputs within methods chain
     Given I have the following code:
     """
-    require 'tapp'
-
-    Tapp.config.reset
-
     (1..5).taputs.select(&:odd?).taputs.inject(&:+)
     """
 

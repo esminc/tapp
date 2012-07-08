@@ -2,10 +2,6 @@ Feature: Object#tapp
   Scenario: Call tapp within methods chain
     Given I have the following code:
     """
-    require 'tapp'
-
-    Tapp.config.reset
-
     (1..5).tapp.select(&:odd?).tapp.inject(&:+)
     """
 
