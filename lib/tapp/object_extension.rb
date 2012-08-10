@@ -11,8 +11,8 @@ module Tapp
       }
     end
 
-    def taputs
-      tapp :puts
+    def taputs(&block)
+      tapp :puts, &block
     end
 
     def taap
