@@ -1,5 +1,3 @@
-require 'tapp'
-
 module Tapp
   module Util
     module_function
