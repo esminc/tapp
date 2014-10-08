@@ -24,5 +24,5 @@ step 'Ruby it' do
 end
 
 step 'I should see:' do |output|
-  @output.should == output
+  expect(@output).to eq output
 end
