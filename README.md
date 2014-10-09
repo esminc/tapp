@@ -1,4 +1,4 @@
-# tapp [![Build Status](https://secure.travis-ci.org/esminc/tapp.png?branch=master)](http://travis-ci.org/#!/esminc/tapp) [![Code Climate](https://codeclimate.com/github/esminc/tapp/badges/gpa.svg)](https://codeclimate.com/github/esminc/tapp)
+# tapp [![Build Status](https://travis-ci.org/esminc/tapp.svg?branch=master)](https://travis-ci.org/esminc/tapp) [![Code Climate](https://codeclimate.com/github/esminc/tapp/badges/gpa.svg)](https://codeclimate.com/github/esminc/tapp)
 
 ## Install
 
