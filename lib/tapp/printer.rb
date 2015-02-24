@@ -15,8 +15,12 @@ module Tapp
       when :awesome_print
         AwesomePrint.instance
       else
-        raise ArgumentError, "Unknown printer: #{name.inspect}"
+        const_name = name.to_s.split('_').map(&:capitalize).join
+        Module.const_get(const_name).instance
       end
+
+    rescue NameError
+      raise ArgumentError, "Unknown printer: #{name.inspect}"
     end
 
     class Base

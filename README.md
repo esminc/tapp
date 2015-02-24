@@ -44,6 +44,24 @@ end
   </tr>
 </table>
 
+## Use Original Printer
+
+You can create original printer use Tapp::Printer::Base.
+
+If you want to use original printer, set printer name to default_printer.
+
+```
+class RailsLoggerPrinter < Tapp::Printer::Base
+  def print(*args)
+    Rails.logger.info *args
+  end
+end
+
+Tapp.configure do |config|
+  config.default_printer = :timestamp_printer
+end
+```
+
 ## Note on Patches/Pull Requests
 
 * Fork the project.
