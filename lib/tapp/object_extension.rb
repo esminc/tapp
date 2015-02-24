@@ -14,11 +14,5 @@ module Tapp
     def taputs(&block)
       tapp :puts, &block
     end
-
-    def taap
-      warn 'DEPRECATION WARNING: `taap` is deprecated. Set `Tapp.config.default_printer = :awesome_print` and use `tapp` instead.'
-
-      tapp :awesome_print
-    end
   end
 end

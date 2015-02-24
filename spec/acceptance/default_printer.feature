@@ -1,8 +1,8 @@
 Feature: config.default_printer
-  Scenario: set config.default_printer to :awesome_print and call tapp
+  Scenario: set config.default_printer to :puts and call tapp
     Given I have the following code:
     """
-    Tapp.config.default_printer = :awesome_print
+    Tapp.config.default_printer = :puts
 
     'hoge'.tapp
     """
@@ -10,5 +10,5 @@ Feature: config.default_printer
     When Ruby it
     Then I should see:
     """
-    "hoge"
+    hoge
     """
