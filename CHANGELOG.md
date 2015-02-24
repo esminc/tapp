@@ -1,5 +1,11 @@
 # ChangeLog
 
+## 1.5.0 (2015-02-24)
+
+* `awesome_print` support is split into separate gem. Use [tapp-awesome_print](https://github.com/esminc/tapp-awesome_print).
+* Add 'custom printer' feature. See [custom_printer.feature](https://github.com/esminc/tapp/blob/master/spec/acceptance/custom_printer.feature).
+* Remove `Object#taap`.
+
 ## 1.4.0 (2012-07-08)
 
 Some API changes for future enhancements.
