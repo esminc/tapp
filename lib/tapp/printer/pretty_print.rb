@@ -9,11 +9,11 @@ module Tapp::Printer
         remove_method :print
 
         def print(*args)
-          pp *args
+          pp(*args)
         end
       end
 
-      print *args
+      print(*args)
     end
   end
 
