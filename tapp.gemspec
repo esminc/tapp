@@ -20,5 +20,6 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'thor'
 
-  s.add_development_dependency 'turnip'
+  # Pin a Turnip version that doesn't use Ruby 2.3 safe navigation operator syntax.
+  s.add_development_dependency 'turnip', '~> 3'
 end
